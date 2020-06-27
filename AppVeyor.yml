@@ -9,7 +9,7 @@ clone_folder: c:\HuaweiBootloader_Bruteforce
 
 build_script:
   - cd c:\HuaweiBootloader_Bruteforce
-  - "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" HuaweiBootloader_Bruteforce.sln -t:Rebuild -p:Configuration=Release
+  - "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" HuaweiBootloader_Bruteforce.csproj -t:Rebuild -p:Configuration=Release
   
 after_build:
 - ps: | # package artifacts
