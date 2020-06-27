@@ -1,6 +1,9 @@
 # HuaweiBootloader_Bruteforce
 Fastboot OEM Unlock Bruteforce Software
 
+[![Build status](https://ci.appveyor.com/api/projects/status/h1cujp12k7ea91dt?svg=true)](https://ci.appveyor.com/project/rainxh11/huaweibootloader-bruteforce)
+
+
 ## Summary
   
 After closing the official HUAWEI website, which allowed you to retrieve the code to unlock the bootloader of Huawei/Honor phones, here is a Winbdows C# Program to retrieve it by yourself.
