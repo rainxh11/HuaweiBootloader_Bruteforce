@@ -14,3 +14,5 @@ It uses a bruteforce method, based on the Luhn algorithm and the iMEI identifier
 4. Connect your device to the computer and launch the program.  
 5. You must provide your device IMEI to the program.
 6. Wait it out to finish going through about 200k possible unlock codes, it's going to take a while.
+
+### AUTHOR: Ahmed Chakhoum
