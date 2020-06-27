@@ -138,6 +138,14 @@ namespace HuaweiBootloader_Bruteforce
             long oemCode = 1000000000000000;
             string currentDir = AppContext.BaseDirectory;
 
+            if (!Directory.Exists(currentDir + @"fastboot\"))
+            {
+                try
+                {
+                    Directory.CreateDirectory(currentDir + @"fastboot");
+                }
+                catch { }
+            }
             ExtractResource(fastbootZipFile, currentDir + @"fastboot\");
             string fastbootFolder = currentDir + @"fastboot\";
 
