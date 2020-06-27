@@ -9,10 +9,7 @@ clone_folder: c:\HuaweiBootloader-Bruteforce
 
 build:
   project: HuaweiBootloader_Bruteforce.sln
-  
-build_script:
-  - cd c:\HuaweiBootloader-Bruteforce
-  - msbuild HuaweiBootloader_Bruteforce.sln -t:Build -p:Configuration=Release
+ 
   
 after_build:
 - ps: | # package artifacts
