@@ -1,0 +1,19 @@
+# image
+image: Visual Studio 2019
+
+# build platform
+platform: x86
+
+# clone directory
+clone_folder: c:\HuaweiBootloader_Bruteforce
+
+build_script:
+  - cd c:\HuaweiBootloader_Bruteforce
+  - "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" HuaweiBootloader_Bruteforce.sln -t:Rebuild -p:Configuration=Release
+  
+after_build:
+- ps: | # package artifacts
+    7z a -m0=LZMA2 -mx9 c:\HuaweiBootloader_Bruteforce\HuaweiBootloader_Bruteforce.7z c:\HuaweiBootloader_Bruteforce\bin\Release\*
+artifacts:
+- path: HuaweiBootloader_Bruteforce.7z
+  name: HuaweiBootloader_Bruteforce
