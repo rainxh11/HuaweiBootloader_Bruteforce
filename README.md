@@ -18,4 +18,10 @@ It uses a bruteforce method, based on the Luhn algorithm and the iMEI identifier
 5. You must provide your device IMEI to the program.
 6. Wait it out to finish going through about 200k possible unlock codes, it's going to take a while.
 
+## Supported Devices:
+All Huawei android phones pre 2019 models
+Some 2019 Models with early security patchs and inital firmware version
+
+Successfully unlocked a HUAWEI Y7 Prime 2019 with February Firmware version, Huawei removed their unlock code website, and eventually changed the booloader and digits-only unlock codes no longer seem to work
+
 ### AUTHOR: Ahmed Chakhoum
